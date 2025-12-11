@@ -1,0 +1,28 @@
+@media (max-width:1440px) {
+    section {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .info-inner {
+        display: grid;
+        gap: 2vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "about experience"
+            "awards certifications";
+    }
+    .info-section {
+        width: 100%;
+        height: auto;
+        margin-top: 4vh;
+        box-sizing: border-box;
+    }
+    section.works {
+        height: auto;
+        min-height: 100vh;
+        scroll-snap-align: none;
+        }
+
+}

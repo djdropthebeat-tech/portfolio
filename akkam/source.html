@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta name="path_role" content="MAIN" />
+    <meta name="author" content="AAKAM" />
+    <meta name="description" content="아캄 공식 홈페이지" />
+    <meta name="keywords" content="AAKAM" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <!-- 공통파일 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Facebook Channel Site Verification -->
+    <meta
+      name="facebook-domain-verification"
+      content="t1mzswfrtlg1b26xdhg3xn371znpzt"
+    />
+    <!-- Facebook Channel Site Verification -->
+
+    <link rel="canonical" href="https://aakam.kr" />
+    <meta property="og:url" content="https://aakam.kr" />
+    <meta property="og:title" content="AAKAM / 아캄" />
+    <meta property="og:description" content="아캄 공식 홈페이지" />
+    <meta property="og:site_name" content="AAKAM" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/upload/share-image-1-444d6681e4eca2600f6ea3367b90ebb3.jpg"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/upload/favicon-637eb4d81ad1e73f77bdab2d5b0d4f84.ico"
+    />
+
+    <style type="text/css"></style>
+    <title>AAKAM / 아캄</title>
+  </head>
+  <body id="main">
+    <div id="wrap">
+      <hr class="layout" />
+      <div id="container">
+        <!-- 장바구니 모달 -->
+        <style>
+          body.cart_on .cart_frame {
+            right: 0px;
+            opacity: 1;
+            z-index: 99999999;
+          }
+          .cart_frame {
+            position: fixed;
+            top: 0px;
+            right: -20px;
+            width: 100%;
+            max-width: 480px;
+            height: 100vh;
+            padding: 0px;
+            background: #fff;
+            transition: ease 0.5s;
+            border-left: 1px solid #e1e1e1;
+            z-index: -1;
+            opacity: 0;
+          }
+          .cart_close {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            z-index: 56;
+            cursor: pointer;
+            font-size: 20px;
+          }
+          .cart_frame_inner {
+            height: 100%;
+            position: relative;
+          }
+          #cartFrmae {
+            width: calc(100%);
+            height: 100%;
+            overflow: hidden;
+            background: #fff;
+            position: relative;
+            z-index: 55;
+          }
+          body.cart_on .cart_dim {
+            opacity: 1;
+            transform: scale(1);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+          }
+          .cart_dim {
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background: #00000080;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: scale(0);
+            z-index: 15;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 50;
+          }
+        </style>
+
+        <div class="cart_frame">
+          <div class="cart_close"><i class="xi-close"></i></div>
+          <div class="cart_frame_inner">
+            <iframe
+              src="/order/cart.html"
+              id="cartFrmae"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+          <div class="cart_dim"></div>
+        </div>
+
+        <!-- 최상단 텍스트 배너 -->
+        <div id="top_banner" class="top_banner_w">
+          <a class="tb_link" href="#none" id="top_banner1"></a>
+          <a class="tb_link" href="#none" id="top_banner2"></a>
+        </div>
+
+        <!-- 공통헤더 -->
+        <header id="header" class="">
+          <div class="header_inner">
+            <div class="m_menu_btn">
+              <button type="button" class="slide_btn"><i></i></button>
+            </div>
+            <div class="search_icon search_icon_m">
+              <a href="#none"
+                ><svg
+                  class="svg-icon svg-icon--search"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewbox="0 0 22 22"
+                >
+                  <g id="m-search" transform="translate(-323 -69)">
+                    <g id="search" transform="translate(321.75 68)">
+                      <path
+                        id="Ellipse_154"
+                        data-name="Ellipse 154"
+                        d="M8-.75A8.75,8.75,0,1,1-.75,8,8.76,8.76,0,0,1,8-.75Zm0,16A7.25,7.25,0,1,0,.75,8,7.258,7.258,0,0,0,8,15.25Z"
+                        transform="translate(3 3)"
+                      ></path>
+                      <path
+                        id="Line_172"
+                        data-name="Line 172"
+                        d="M3.82,4.88-.53.53.53-.53,4.88,3.82Z"
+                        transform="translate(16.65 16.65)"
+                      ></path>
+                    </g>
+                    <rect
+                      id="Rectangle_5181"
+                      data-name="Rectangle 5181"
+                      width="22"
+                      height="22"
+                      transform="translate(323 69)"
+                      fill="none"
+                    ></rect>
+                  </g></svg>
+                </a>
+            </div>
+            <div class="top_logo">
+              <h1>
+                <div df-banner-code="logo" hidden>
+                  <a href="/index.html" target="{#target}" df-banner-clone
+                    >{#item}</a
+                  >
+                </div>
+              </h1>
+            </div>
+
+            <ul class="top_gnb">
+              <li class="main_menu">
+                <a href="#none">SHOP</a>
+                <div class="main_menu_sub">
+                  <ul
+                    class="xans-element- xans-layout xans-layout-category mms_list"
+                  >
+                    <li class="xans-record-">
+                      <a href="/category/all/42/">ALL</a>
+                    </li>
+                    <li class="xans-record-">
+                      <a href="/category/outerwear/45/">OUTERWEAR</a>
+                    </li>
+                    <li class="xans-record-">
+                      <a href="/category/tops/46/">TOPS</a>
+                    </li>
+                    <li class="xans-record-">
+                      <a href="/category/summer-tops/51/">SUMMER TOPS</a>
+                    </li>
+                    <li class="xans-record-">
+                      <a href="/category/bottoms/50/">BOTTOMS</a>
+                    </li>
+                    <li class="xans-record-">
+                      <a href="/category/headwear/87/">HEADWEAR</a>
+                    </li>
+                    <li class="xans-record-">
+                      <a href="/category/acc/88/">ACC</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="lookbook_link"><a href="">ARCHIVE</a></li>
+              <li><a href="/stockist.html">STOCKISTS</a></li>
+              <li><a href="/membership.html">MEMBERSHIP</a></li>
+              <li><a href="/board/urgency/urgency.html">CONTACT</a></li>
+              <li><a href="/board/qna/6/">Q&amp;A</a></li>
+            </ul>
+
+            <div class="top_member">
+              <div class="search_icon">
+                <a href="#none"
+                  ><svg
+                    class="svg-icon svg-icon--search"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewbox="0 0 22 22"
+                  >
+                    <g id="m-search" transform="translate(-323 -69)">
+                      <g id="search" transform="translate(321.75 68)">
+                        <path
+                          id="Ellipse_154"
+                          data-name="Ellipse 154"
+                          d="M8-.75A8.75,8.75,0,1,1-.75,8,8.76,8.76,0,0,1,8-.75Zm0,16A7.25,7.25,0,1,0,.75,8,7.258,7.258,0,0,0,8,15.25Z"
+                          transform="translate(3 3)"
+                        ></path>
+                        <path
+                          id="Line_172"
+                          data-name="Line 172"
+                          d="M3.82,4.88-.53.53.53-.53,4.88,3.82Z"
+                          transform="translate(16.65 16.65)"
+                        ></path>
+                      </g>
+                      <rect
+                        id="Rectangle_5181"
+                        data-name="Rectangle 5181"
+                        width="22"
+                        height="22"
+                        transform="translate(323 69)"
+                        fill="none"
+                      ></rect>
+                    </g></svg></a>
+              </div>
+              <div
+                class="xans-element- xans-layout xans-layout-statelogoff my_icon"
+              >
+                <a
+                  href="/member/login.html?noMemberOrder&amp;returnUrl=/index.html"
+                  ><svg
+                    class="svg-icon svg-icon--user"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="22"
+                    viewbox="0 0 21 22"
+                  >
+                    <g id="m-user" transform="translate(-291 -69)">
+                      <g id="user" transform="translate(290 68)">
+                        <path
+                          id="Path_2956"
+                          data-name="Path 2956"
+                          d="M20.75,21h-1.5V19A3.254,3.254,0,0,0,16,15.75H8A3.254,3.254,0,0,0,4.75,19v2H3.25V19A4.755,4.755,0,0,1,8,14.25h8A4.755,4.755,0,0,1,20.75,19Z"
+                          transform="translate(-0.25 1)"
+                        ></path>
+                        <circle
+                          id="Ellipse_153"
+                          data-name="Ellipse 153"
+                          cx="6"
+                          cy="6"
+                          r="6"
+                          transform="translate(6 2)"
+                          fill="none"
+                        ></circle>
+                        <path
+                          id="Ellipse_153_-_Outline"
+                          data-name="Ellipse 153 - Outline"
+                          d="M6,1.5A4.5,4.5,0,1,0,10.5,6,4.505,4.505,0,0,0,6,1.5M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z"
+                          transform="translate(6 2)"
+                        ></path>
+                      </g>
+                      <rect
+                        id="Rectangle_5180"
+                        data-name="Rectangle 5180"
+                        width="21"
+                        height="22"
+                        transform="translate(291 69)"
+                        fill="none"
+                      ></rect>
+                    </g></svg></a>
+              </div>
+              <div
+                class="xans-element- xans-layout xans-layout-statelogoff cart_icon"
+              >
+                <a href="#none"
+                  ><span
+                    ><svg
+                      class="svg-icon svg-icon--bag"
+                      data-icon-theme="option_2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewbox="0 0 22 22"
+                    >
+                      <g id="m-bag" transform="translate(-264 -69)">
+                        <g
+                          id="Group_3858"
+                          data-name="Group 3858"
+                          transform="translate(1)"
+                        >
+                          <path
+                            id="Path_2957"
+                            data-name="Path 2957"
+                            d="M3,1.5a.5.5,0,0,0-.5.5v.062l-1,11.979A.5.5,0,0,0,2,14.5H17a.5.5,0,0,0,.5-.458l-1-11.979V2a.5.5,0,0,0-.5-.5H3M3,0H16a2,2,0,0,1,2,2l1,12a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2L1,2A2,2,0,0,1,3,0Z"
+                            transform="translate(265 74)"
+                          ></path>
+                          <path
+                            id="Subtraction_13"
+                            data-name="Subtraction 13"
+                            d="M-2465.5,7h-1.5V2a2,2,0,0,1,2-2h5a2,2,0,0,1,2,2V7h-1.5V2a.5.5,0,0,0-.5-.5h-5a.5.5,0,0,0-.5.5V7Z"
+                            transform="translate(2737 70)"
+                          ></path>
+                        </g>
+                        <rect
+                          id="Rectangle_5179"
+                          data-name="Rectangle 5179"
+                          width="22"
+                          height="22"
+                          transform="translate(264 69)"
+                          fill="none"
+                        ></rect>
+                      </g></svg></span>
+                  <span class="count EC-Layout-Basket-count"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="header_menu_bg"></div>
+        </header>
+        <hr class="layout" />
+
+        <form
+          id="searchBarForm"
+          name=""
+          action="/product/search.html"
+          method="get"
+          target="_self"
+          enctype="multipart/form-data"
+        >
+          <input
+            id="banner_action"
+            name="banner_action"
+            value=""
+            type="hidden"
+          />
+          <div
+            class="xans-element- xans-layout xans-layout-searchheader search_form"
+          >
+            <!--
+    $product_page=/product/detail.html
+    $category_page=/product/list.html
+    -->
+            <div class="search_form_inner">
+              <fieldset>
+                <legend>검색</legend>
+                <input
+                  id="keyword"
+                  name="keyword"
+                  fw-filter=""
+                  fw-label="검색어"
+                  fw-msg=""
+                  class="inputTypeText"
+                  placeholder=""
+                  onmousedown="SEARCH_BANNER.clickSearchForm(this)"
+                  value=""
+                  type="text"
+                /><button
+                  onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"
+                  class="search_btn"
+                >
+                  Search
+                </button>
+              </fieldset>
+              <div class="search_close"><i class="xi-close"></i></div>
+            </div>
+          </div>
+        </form>
+
+        <!-- 공통 사이드바 -->
+        <div class="slide_menu_w">
+          <div class="sm_inner">
+            <ul class="sm_gnb_w">
+              <li class="sm_main_menu">
+                <a href="#none">SHOP</a
+                ><span class="sm_icon"
+                  ><i class="xi-plus-thin"></i><i class="xi-minus-thin"></i
+                ></span>
+                <div id="slideCateList" class="categoryCont sm_sub_menu">
+                  <ul
+                    class="xans-element- xans-layout xans-layout-category categoryList"
+                  >
+                    <li id="cate42" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=42">ALL</a>
+                      <a href="/category/all/42/" class="view"></a>
+                    </li>
+                    <li id="cate45" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=45"
+                        >OUTERWEAR</a
+                      >
+                      <a href="/category/outerwear/45/" class="view"></a>
+                    </li>
+                    <li id="cate46" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=46">TOPS</a>
+                      <a href="/category/tops/46/" class="view"></a>
+                    </li>
+                    <li id="cate51" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=51"
+                        >SUMMER TOPS</a
+                      >
+                      <a href="/category/summer-tops/51/" class="view"></a>
+                    </li>
+                    <li id="cate50" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=50"
+                        >BOTTOMS</a
+                      >
+                      <a href="/category/bottoms/50/" class="view"></a>
+                    </li>
+                    <li id="cate87" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=87"
+                        >HEADWEAR</a
+                      >
+                      <a href="/category/headwear/87/" class="view"></a>
+                    </li>
+                    <li id="cate88" class="xans-record-">
+                      <a href="#none" class="cate" cate="?cate_no=88">ACC</a>
+                      <a href="/category/acc/88/" class="view"></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="lookbook_link"><a href="">ARCHIVE</a></li>
+              <li><a href="/board/qna/6/">Q&amp;A</a></li>
+              <li><a href="/stockist.html">STOCKISTS</a></li>
+              <li><a href="/membership.html">MEMBERSHIP</a></li>
+              <li><a href="/board/urgency/urgency.html">CONTACT</a></li>
+              <!--li class="sm_main_menu ">
+                <a href="#none">INFORMATION</a><span class="sm_icon"><i class="xi-plus-thin"></i><i class="xi-minus-thin"></i></span>
+                <ul class="sm_sub_menu" module="Layout_BoardInfo">
+                    <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                    <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                    <li class="instagram_link"><a href="#none" target="blank">INSTAGRAM </a></li>
+                    <li class="kakaotalk_link"><a href="#none" target="blank">1:1 KAKAO</a></li>
+                </ul>
+            </li-->
+            </ul>
+
+            <ul class="sm_member_w">
+              <li class="" class="">
+                <a
+                  href="/member/login.html?noMemberOrder&amp;returnUrl=/index.html"
+                  >LOGIN/REGISTER</a
+                >
+              </li>
+              <li><a href="/myshop/order/list.html">ORDER</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 메인 슬라이드 -->
+        <!-- 피씨 메인슬라이드 -->
+
+        <div df-banner-code="slide-pc" hidden class="main_slide main_slide_pc">
+          <div df-banner-clone class="ms_inner">
+            <a href="%7B#href%7D" target="{#target}">
+              <div class="ms_img">{#item}</div>
+              <!--div class="ms_link"><span class="ms_title">{#title}</span><span class="ms_arrow">Learn more <i class="xi-arrow-right"></i></span></div-->
+            </a>
+          </div>
+        </div>
+        <div
+          df-banner-code="slide-mobile"
+          hidden
+          class="main_slide main_slide_m"
+        >
+          <div df-banner-clone class="ms_inner">
+            <a href="%7B#href%7D" target="{#target}">
+              <div class="ms_img">{#item}</div>
+              <!--div class="ms_link"><span class="ms_title">{#title}</span><span class="ms_arrow">Learn more <i class="xi-arrow-right"></i></span></div-->
+            </a>
+          </div>
+        </div>
+
+        <div class="main_contents">
+          <div moduel="layout_logincheck">
+            <!--$url = /member/login.html
+                ※ 로그인 후, 이동할 페이지 url을 지정할 수 있는 변수
+            -->
+          </div>
+
+          <div
+            class="xans-element- xans-product xans-product-listmain-2 xans-product-listmain xans-product-2 ec-base-product typeThumb main_prd"
+          >
+            <!--
+                $count = 4
+                    ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                    ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                $moreview = no
+                $cache = yes
+            -->
+            <!--h2>NEW ARRIVALS</h2-->
+            <ul class="prdList grid2">
+              <li id="anchorBoxId_649" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/high-neck-leather-jacket-black/649/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      name="anchorBoxName_649"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250919/ff2b52a0b933c79c9efbd155fb451707.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20251029/e7e6858eeabaa7ad785db7db2b290e92.gif'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250919/ff2b52a0b933c79c9efbd155fb451707.jpg'"
+                          alt="High-Neck Leather Jacket (Black)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(649,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('649', '1', '3','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/high-neck-leather-jacket-black/649/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >High-Neck Leather Jacket (Black)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >211,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="anchorBoxId_631" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/layered-long-sleeve-white/631/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      name="anchorBoxName_631"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/fe68f9c39aa7991ea5644b88ad1e142e.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250819/f44a7e42b95c14b5f505f6e210cb2462.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/fe68f9c39aa7991ea5644b88ad1e142e.jpg'"
+                          alt="Layered Long Sleeve (White)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(631,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('631', '1', '3','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/layered-long-sleeve-white/631/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >Layered Long Sleeve (White)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >123,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="anchorBoxId_654" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/1212-예약-배송-washed-field-jacket-khaki/654/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      name="anchorBoxName_654"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250902/9768b7b2b584f64101dd3bb07e0ad639.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250902/440aa05ea747f9a85bcc1569fbfb6e15.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250902/9768b7b2b584f64101dd3bb07e0ad639.jpg'"
+                          alt="[12.12 예약 배송] Washed Field Jacket (Khaki)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(654,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('654', '1', '3','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/1212-예약-배송-washed-field-jacket-khaki/654/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >[12.12 예약 배송] Washed Field Jacket (Khaki)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >208,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="anchorBoxId_668" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/rhinestone-velour-zip-up-hoodie-green/668/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      name="anchorBoxName_668"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250915/55abd94cb3a2406bfda4dec9907156cd.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250915/ce84ca254699200a3305b453051a681a.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250915/55abd94cb3a2406bfda4dec9907156cd.jpg'"
+                          alt="Rhinestone Velour Zip-Up Hoodie (Green)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(668,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('668', '1', '3','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/rhinestone-velour-zip-up-hoodie-green/668/category/1/display/3/?icid=MAIN.product_listmain_2"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >Rhinestone Velour Zip-Up Hoodie (Green)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >159,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 이미지 배너1 -->
+          <div
+            df-banner-code="banner01"
+            hidden
+            class="main_banner_img main_banner_img_pc"
+          >
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>
+              {#item}</a
+            >
+          </div>
+          <div
+            df-banner-code="banner01-m"
+            hidden
+            class="main_banner_img main_banner_img_m"
+          >
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>
+              {#item}</a
+            >
+          </div>
+
+          <div
+            class="xans-element- xans-product xans-product-listmain-1 xans-product-listmain xans-product-1 ec-base-product typeThumb main_prd"
+          >
+            <!--
+        $count = 4
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $moreview = no
+        $cache = yes
+    -->
+            <!--h2>BEST PRODUCTS</h2-->
+            <ul class="prdList grid2">
+              <li id="anchorBoxId_619" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/side-washed-button-denim-pants-black/619/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      name="anchorBoxName_619"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/cb3d5c02a92c122c9045b7cd74141b72.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250819/1b344b3df06329ee2329a8feb45876d0.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/cb3d5c02a92c122c9045b7cd74141b72.jpg'"
+                          alt="Side Washed Button Denim Pants (Black)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(619,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('619', '1', '2','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/side-washed-button-denim-pants-black/619/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >Side Washed Button Denim Pants (Black)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >146,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li id="anchorBoxId_617" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/dirty-gradation-denim-pants-gray/617/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      name="anchorBoxName_617"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/9f0336ac3ecbb5bb19296783b9740a83.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250819/eb265abb85294e50b2af3a82f998a7ee.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/9f0336ac3ecbb5bb19296783b9740a83.jpg'"
+                          alt="Dirty Gradation Denim Pants (Gray)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(617,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('617', '1', '2','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/dirty-gradation-denim-pants-gray/617/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >Dirty Gradation Denim Pants (Gray)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >181,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="anchorBoxId_616" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/side-rhinestone-denim-pants-blue/616/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      name="anchorBoxName_616"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/3f4d6870ac8ee6497512345fad99bbdd.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250819/538c8a65618fdc39ce3db0e1449bf909.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/3f4d6870ac8ee6497512345fad99bbdd.jpg'"
+                          alt="Side Rhinestone Denim Pants (Blue)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(616,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('616', '1', '2','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/side-rhinestone-denim-pants-blue/616/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >Side Rhinestone Denim Pants (Blue)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >163,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="anchorBoxId_622" class="prd_list_inner xans-record-">
+                <div class="thumbnail">
+                  <i class="best_icon">BEST</i>
+                  <div class="prdImg">
+                    <a
+                      href="/product/painted-military-cargo-pants-khaki/622/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      name="anchorBoxName_622"
+                    >
+                      <span
+                        ><img
+                          src="//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/4d8543ae6727d07fd8ea8d04edbad795.jpg"
+                          onmouseover="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/small/20250819/3afdf43cf16f69e74f21023d111bd1af.jpg'"
+                          onmouseout="this.src='//ecimg.cafe24img.com/pg1435b06795390045/ykuinc/web/product/medium/20250819/4d8543ae6727d07fd8ea8d04edbad795.jpg'"
+                          alt="Painted Military Cargo Pants (Khaki)"
+                      /></span>
+                    </a>
+                  </div>
+                  <span class="wish"></span>
+                  <div class="icon">
+                    <div class="soldout"></div>
+                    <div class="addbasket">
+                      <img
+                        src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                        onClick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(622,  1, 'basket', '')"
+                        alt="장바구니 담기"
+                        class="ec-admin-icon cart"
+                      />
+                    </div>
+                    <!--div class="promotion">       </div>
+            <div class="button">
+                <div class="likeButton displaynone"><button type="button"><strong></strong></button></div>
+                <div class="option"></div> <img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_prd_zoom.gif"  onClick="zoom('622', '1', '2','', '');" style="cursor:pointer" alt="상품 큰 이미지 보기" /> 
+            </div>-->
+                  </div>
+                </div>
+                <div class="description">
+                  <span class="name"
+                    ><a
+                      href="/product/painted-military-cargo-pants-khaki/622/category/1/display/2/?icid=MAIN.product_listmain_1"
+                      class=""
+                      ><span class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >상품명</span
+                        >
+                        :</span
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >Painted Military Cargo Pants (Khaki)</span
+                      ></a
+                    ></span
+                  >
+                  <span class="name displaynone">월 원 / 개월</span>
+
+                  <ul
+                    class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                  >
+                    <li name="판매가" class="xans-record-">
+                      <strong class="title displaynone"
+                        ><span class="" style="font-size: 13px; color: #000000"
+                          >판매가</span
+                        >
+                        :</strong
+                      >
+                      <span class="" style="font-size: 13px; color: #000000"
+                        >182,000원</span
+                      ><span id="span_product_tax_type_text" style=""> </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 이미지 배너2 -->
+          <div
+            df-banner-code="banner02"
+            hidden
+            class="main_banner_img main_banner_img_pc main_banner_img02"
+          >
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>
+              {#item}</a
+            >
+          </div>
+          <div
+            df-banner-code="banner02-m"
+            hidden
+            class="main_banner_img main_banner_img_m main_banner_img02"
+          >
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>
+              {#item}</a
+            >
+          </div>
+
+          <!-- 텍스트 배너 -->
+          <div df-banner-code="txt-banner01" hidden class="main_banner_txt">
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>
+              <pre>{#html}</pre>
+            </a>
+          </div>
+
+          <!-- 이미지 배너3 -->
+          <div
+            df-banner-code="banner03"
+            hidden
+            class="main_banner_img main_banner_img_pc"
+          >
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>{#item}</a>
+          </div>
+          <div
+            df-banner-code="banner03-m"
+            hidden
+            class="main_banner_img main_banner_img_m"
+          >
+            <a href="%7B#href%7D" target="{#target}" df-banner-clone>
+              {#item}</a
+            >
+          </div>
+        </div>
+        <!-- 공통 푸터 -->
+        <div id="footer">
+          <div class="f_inner_top">
+            <ul class="xans-element- xans-layout xans-layout-info">
+              <li>FLAGSHIP STORE<br />서울특별시 마포구 성미산로29길 24-6</li>
+              <br />
+              <li>
+                스토어 운영 시간<br />
+                12PM ~ 8PM
+              </li>
+              <br />
+              <li>
+                카카오톡 채널 상담 운영 시간<br />
+                10AM ~ 5PM
+              </li>
+              <br />
+              <li>070-8728-1000 (유선 상담은 지원하지 않습니다.)</li>
+              <li>aakamkr@gmail.com</li>
+            </ul>
+            <ul>
+              <!--<li><a href="/shopinfo/company.html">ABOUT</a></li>-->
+              <li>
+                <a href="/member/mall_agreement.html">TERMS &amp; CONDITIONS</a>
+              </li>
+              <li><a href="/member/privacy.html">PRIVACY POLICY</a></li>
+              <li><a href="/shopinfo/guide.html">SHOPPING GUIDE</a></li>
+            </ul>
+            <ul>
+              <li class="instagram_link">
+                <a href="#none" target="blank">INSTAGRAM </a>
+              </li>
+              <li class="kakaotalk_link">
+                <a href="#none" target="blank">1:1 KAKAO</a>
+              </li>
+              <!--<li class="" module="Layout_footer"><a href="mailto:{$cpo_email}">E-MAIL</a></li>-->
+            </ul>
+          </div>
+          <div class="f_inner_bottom">
+            <ul class="xans-element- xans-layout xans-layout-footer address">
+              <li>COMPANY: 주식회사 영광의</li>
+              <li>
+                COMPANY REG.NO: 175-86-02631<a
+                  href="#none"
+                  onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1758602631', 'bizCommPop', 'width=750, height=950;');return false;"
+                  >[사업자정보확인]</a
+                >
+              </li>
+              <li>CEO: 김광영</li>
+              <li>PERSONAL INFO MANAGER: 주식회사 영광의</li>
+              <li>NETWORK REG.NO: 2025-서울마포-0618 호</li>
+            </ul>
+            <!--<div module="Layout_footer" class="copyright"> &copy; {$mall_name}. SITE BY SHOWDESIGN</div>-->
+          </div>
+        </div>
+        <!-- 하단 로고 -->
+        <div df-banner-code="footer-logo" hidden class="footer_logo">
+          <a href="/index.html" target="{#target}" df-banner-clone>{#item}</a>
+        </div>
+        <div id="progressPaybar" style="display: none">
+          <div id="progressPaybarBackground" class="layerProgress"></div>
+          <div id="progressPaybarView">
+            <p class="graph">현재 결제가 진행중입니다.</p>
+            <p class="txt">
+              본 결제 창은 결제완료 후 자동으로 닫히며, <br />
+              결제 진행 중에 본 결제 창을 닫으시면<br />
+              주문이 되지 않으니 <br />
+              결제 완료 될 때 까지 닫지 마시기 바랍니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dim"></div>
+    <span itemscope="" itemtype="https://schema.org/Organization">
+      <link itemprop="url" href="https://aakam.kr" />
+    </span>
+
+    <div id="fbe_common_top_script" style="display: none"></div>
+  </body>
+</html>

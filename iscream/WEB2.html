@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko" >
+<head>
+<meta charset="utf-8">
+<title>I scream buy,(   )bye.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<style>
+    body, html {
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .scroll-container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll; 
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+    }
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }  
+    .back{
+        width: 100vw;
+        height: auto;
+        max-height: 100%;
+        top:0;
+		position: relative;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+	.text{
+		width: 100vw;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		position: absolute;
+        top:0;
+        margin-top: 20%;
+        justify-content: flex-end;
+	}
+    .text-kr{
+        width: 40vw;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        right: 0;
+        color: #FFFFFF;
+       	font-family: 'Noto Sans KR', sans-serif;
+		font-weight: 400;
+        text-align: justify;
+		opacity: 0;
+		animation: fadeIn 7s forwards; 
+		line-height: 1.6;
+    }
+		@keyframes fadeIn {
+		to {
+			opacity: 1;
+		}
+	}
+    .text-en{
+        width: 29vw;
+        height: auto;
+		margin-right: 15vw;
+		margin-left: 3vw;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        color: #FFFFFF;
+		letter-spacing : -0.3px;
+       	font-family: 'Noto Sans KR', sans-serif;
+		font-weight: 400;
+        text-align: justify;
+		opacity: 0;
+		animation: fadeIn 7s forwards; 
+    }
+		@keyframes fadeIn {
+		to {
+			opacity: 1;
+		}
+	}	
+	 .thumbnail {
+		position: fixed;
+		bottom: 7%;
+		right:5.5%;
+		width: 150px;
+		height: auto;
+		cursor: pointer;
+		transition: filter 0.5s ease;
+		opacity: 50%;
+		animation: fadeIn 7s forwards;
+		filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.5));
+        z-index: 10;
+	}
+	.thumbnail:hover {
+		filter: brightness(0.5) invert(1);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 20%;
+            }
+            to {
+                opacity: 100%;
+            }
+        }	
+	.pre-thumbnail {
+			position: fixed;
+			bottom: 7%;
+			left: 5.5%;
+			width: 40px;
+			height: auto;
+			cursor: pointer;
+			transition: filter 0.5s ease;
+			animation: fadeIn 4s forwards;
+            z-index: 10;
+		}
+
+	.pre-thumbnail:hover {
+			filter: brightness(0.5) invert(1);
+		}
+        @keyframes fadeIn {
+            from {
+                opacity: 0%;
+            }
+            to {
+                opacity: 100%;
+            }
+        }	
+</style>
+</head>
+<body>
+	<div class="scroll-container">
+		<a href="WEB3.html">
+			<img src="img/next.png" alt="다음 페이지" class="thumbnail">
+		</a>
+		<a href="WEB1.html">
+			<img class="pre-thumbnail" src="img/previous.png" alt="이전 페이지"></a>	
+		<div class="back">
+			<img class="img" src="img/main_2.png" alt="logo">
+        </div>    
+        <div class="text">
+			<div class="text-kr">조용한 무대 위 등장하는 닥터 스쿱 (Dr. Scoop).
+				<br> 사람들의 환호 속에서 새로운 아이스크림을 소개한다.
+				<br><br> 수상하고 달콤해 보이는 이 아이스크림은 사람들을 유혹하지만
+				<br> 그 달콤함 속에 숨겨진 위험이 조금씩 모습을 드러낸다.
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I scream buy, ( ) bye.</title>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style type="text/css">
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+		height: 100%;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+		.thumbnail {
+			position: absolute;
+			bottom: 1.4%;
+			right:5.5%;
+			width: 150px;
+			height:auto;
+       		cursor: pointer;
+        	transition: filter 0.5s ease;
+			z-index: 100;
+			filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.5));
+    	}
+    	.thumbnail:hover {
+        	filter: brightness(0.5) invert(1);
+    	}
+
+		.pre-thumbnail {
+			position: absolute;
+			bottom: 1.4%;
+			left:5.5%;
+			width: 40px;
+			height: auto;
+			cursor: pointer;
+			transition: filter 0.5s ease;
+			animation: fadeIn 70s forwards;
+			z-index: 100;
+				
+		}
+		.pre-thumbnail:hover {
+			filter: brightness(0.5) invert(1);
+		}
+        @keyframes fadeIn {
+            from {
+                opacity: 0%;
+            }
+            to {
+                opacity: 100%;
+            }
+        }	
+	
+    .mainbox {
+        width: 100%;
+		height: auto;
+		position: relative;
+	/*	display: flex;
+		justify-content: center;
+		flex-direction: column;*/
+		
+    }
+	.mainbox-height{
+		width:100%;
+		aspect-ratio:1/2.6;
+		position: relative;
+		background-image: url("img/basic 4-5-6.png");
+		background-size: 100% 100%;
+		display: flex;
+		justify-content: center;
+		object-fit: cover;
+	}
+	.back-img {
+        width: 100%;
+        height: auto; /* Adjust this value based on your image's height */
+        position: absolute;
+        top: 0;
+        left: 0;
+		z-index: -100;
+    }
+	.margin-box{
+		width:77vw;
+		height: auto;
+		/*margin-left: 12.5vw;*/
+		
+		/*background-color: green;*/
+		position: relative;	
+		display: flex;
+	}
+	.new-box{
+		width:28vw;
+		height:auto;
+		/*background-color: magenta;*/
+		position: absolute;
+		top:4%;
+		right:0;
+		z-index: 0;
+		padding-right: 100px;
+		padding-top: 15px;
+	}
+	.new{
+		width: 100%;
+		height: 100%;
+		transition: transform 0.3s ease;
+		/*filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.1));*/
+	}
+
+    .new:hover {
+        transform: scale(1.2);
+    }
+	
+	.new{
+		transform-origin: bottom center;
+	}
+	/*.new:active{
+		transform: rotateY(90deg);
+	}*/
+	
+/*------------ice-1-----------------*/
+.ice-box{
+  width: 35vw;
+  height: auto;
+  position: absolute;
+  top:15%;
+  left: 29%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+
+  perspective: 1000px;
+  /*background-color: pink;*/
+}
+
+.ice-flip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.5s;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  /*background-color:orange;*/
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  backface-visibility: hidden;
+/*  background-color: violet;*/
+  overflow-hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: rotateY(180deg);
+  /*background-color: skyblue;*/
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+	
+.ice-size{
+	width: 50%;
+	height: auto;
+	filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+/*.ice-box :hover{
+	transform: scale(1.03);
+	transition: transform 0.5s ease;
+}*/
+.ice-flip:active{
+  transform: rotateY(180deg);
+}
+	
+/*--------------------------------------------------*/
+	/*.ice-box-2{
+  		width: 40vw;
+  		height: auto;
+		display: flex;
+		align-content: space-between;
+	}*/	
+	
+	.ice-2{
+		width: 16vw;
+		height: auto;
+		transition: transform 0.3s ease;
+		margin-top: 8vh;
+		margin-bottom: 8vh;
+		margin-left: -10vw;
+		bottom: 0;
+		z-index: 12;
+		filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+	}
+	.ice-2:hover {
+        transform: scale(1.1);
+		z-index: 12;
+    }
+	.margin-box-2{
+		width:84vw;
+		height: auto;
+		bottom: 0;
+		left:8vw;
+		/*background-color: yellowgreen;*/
+		position: absolute;	
+		display: flex;
+	}
+	.menu-box{
+		width:18vw;
+		height: auto;
+		/*background-color: aqua;*/
+		position: relative;
+		display: flex;
+	}
+	.menu{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		transition: transform 0.3s ease;
+		z-index: 9;
+		filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4));
+
+	}
+	.menu:hover {
+		transform: scale(1.1);
+		z-index: 9;
+	}
+	
+	.menu:active{
+		transform: rotateZ(-10deg);
+	}
+	
+	.character-box{
+		width: 42vw;
+		height:auto;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		/*background-color: orange;*/
+		object-fit: cover;
+		display: flex;
+	}
+	.character-1 {
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		transition: opacity 0.5s ease;
+		filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.3));
+	}
+	.character-1:hover{
+		transform: scale(1.02);
+		transition: transform 0.5s ease;
+	}
+	.character-1{
+		transform-origin: 50% 100% ;
+	}
+	.character-1:active{
+		content: url("img/hi2.png")
+		
+	}
+	.back-ice-box{
+		width: 100vw;
+		height: auto;
+		opacity: 50%;
+		position: absolute;
+		display: flex;
+		bottom: 0;
+		left: 0;
+	}
+	.back-ice-cream {
+		width: 100%;
+		height: 100%;
+	}
+	.sub-title-box{
+		width:30vw;
+		height: auto;
+		position: absolute;
+		display: flex;
+		bottom: 10vh;
+		left: 26vw;
+		box-sizing: border-box;
+		z-index: 20;
+	}
+	.sub-title{
+		width: 100%;
+		height: 100%;
+		filter: drop-shadow(0 0.2rem 0.5rem rgba(0, 0, 0, 0.3));
+	}
+	.sub-title:hover{
+		transform: scale(1.02);
+		transition: transform 0.3s ease;
+	}
+	.sub-title:active {
+		content: url("img/subtitle-2.png")
+	}
+	
+</style>
+</head>
+<body>
+<div class="mainbox">
+	<a href="WEB7.html">
+		<img class="thumbnail" src="img/next.png" alt="다음 페이지"></a>
+	<a href="WEB3.html">
+	    <img class="pre-thumbnail" src="img/previous.png" alt="이전 페이지"></a>	
+	<div class ="mainbox-height">
+		<div class="margin-box">
+			<div class="new-box">
+				<img class="new" src="img/new-3d.png" alt="new">
+			</div>
+			<div class="ice-box">
+				<div class="ice-flip">
+					<div class="front">
+						<img class="ice-size" src="img/ice-cream.png" alt="icecream">
+					</div>
+					<div class="back">
+						<img class="ice-size" src="img/f-ice-cream.png" alt="strange icecream">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="back-ice-box">
+		<img class="back-ice-cream" src="img/back-ice-cream.png" alt="back-ice">
+	</div>	
+	<div class="margin-box-2">
+		<div class="sub-title-box">
+			<img class="sub-title" src="img/subtitle-1.png" alt="sub-title">
+		</div>		
+		<div class="menu-box">
+			<img class="menu" src="img/menu.png" alt="new-menu" style="z-index: 9;">
+		</div>
+			<img class="ice-2" src="img/ice-cream.png" alt="icecream">	
+		<div class="character-box">
+			<img class="character-1" src="img/hi.png" alt="hi">
+		</div>
+	</div>
+</div>
+<script>
+	  document.querySelector(".new-box").addEventListener("click", function () {
+  		var audio1 = new Audio("S.E/Boing.mp3");
+		audio1.loop = false; // 반복재생하지 않음
+  		audio1.volume = 0.5; // 음량 설정
+  		audio1.play(); // mp3 재생
+		});	
+	  document.querySelector(".menu-box").addEventListener("click", function () {
+  		var audio1 = new Audio("S.E/Boing.mp3");
+		audio1.loop = false; // 반복재생하지 않음
+  		audio1.volume = 0.5; // 음량 설정
+  		audio1.play(); // mp3 재생
+		});		
+	
+	  document.querySelector(".ice-flip").addEventListener("click", function () {
+  		var audio1 = new Audio("S.E/licking.mp3");
+		audio1.loop = false; // 반복재생하지 않음
+  		audio1.volume = 0.5; // 음량 설정
+  		audio1.play(); // mp3 재생
+		});
+	
+	  document.querySelector(".ice-2").addEventListener("mouseover", function () {
+  		var audio1 = new Audio("S.E/licking.mp3");
+		audio1.loop = false; // 반복재생하지 않음
+  		audio1.volume = 0.5; // 음량 설정
+  		audio1.play(); // mp3 재생
+		});
+	  document.querySelector(".character-box").addEventListener("click", function () {
+  		var audio1 = new Audio("S.E/Gebberish.mp3");
+		audio1.loop = false; // 반복재생하지 않음
+  		audio1.volume = 0.5; // 음량 설정
+  		audio1.play(); // mp3 재생
+		});	
+	  document.querySelector(".sub-title-box").addEventListener("click", function () {
+  		var audio1 = new Audio("S.E/Click.mp3");
+		audio1.loop = false; // 반복재생하지 않음
+  		audio1.volume = 0.5; // 음량 설정
+  		audio1.play(); // mp3 재생
+		});		
+</script>	
+</body>	
+</html>

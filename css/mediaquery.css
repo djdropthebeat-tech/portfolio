@@ -1,6 +1,27 @@
+@media (min-width:2560px) {
+    #wrap{
+        width: 70vw;
+    }
+    nav{
+        width: 70vw;
+    }
+    section{
+        height: auto;
+    }
+    section.works{
+        min-height: 0;
+    }
+    .info-section{
+        width: 100%;
+    }
+}
+
+
 @media (max-width:1440px) {
+    #wrap, nav{
+        width: 85vw;
+    }
     section {
-        min-height: 100vh;
         height: auto;
         padding-top: 100px;
     }
@@ -23,6 +44,112 @@
         height: auto;
         min-height: 100vh;
         scroll-snap-align: none;
-        }
+    }
+    .explain p {
+        width: 100%;
+        text-align: justify;
+    }    
+}
+@media (min-width:1024px) and (max-width:1439px) {
+    #wrap, nav {
+        width: 80vw;
+    }
+    h2{
+        font-size: 4rem;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    #wrap, nav {
+        width: 80vw;
+    }
+    h1{
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    .info-section ul{
+        gap: 10px;
+    }
+    .info-section ul li div {
+        flex-direction: column;
+        gap: 0;
+    }
+    .info-section ul li {
+        line-height: 1.8;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .info-section.awards ul li{
+        flex-direction: row;
+        align-items: end;
+    }
+    .work-image {
+        display: none;
+    }
+    .work-content{
+        width: 100%;
+        margin-right: 0;
+    }
+}
 
+@media (max-width:767px) {
+    #wrap, nav {
+        width: 90vw;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    section {
+        height: auto;
+        padding-top: 80px;
+    }
+    section.works {
+        height: auto;
+        min-height: 100vh;
+        scroll-snap-align: none;
+    }
+    .info-inner {
+        display: block;
+    }
+    .info-section {
+        width: 100%;
+        height: auto;
+        margin-top: 4vh;
+        box-sizing: border-box;
+    }
+    
+    .info-section ul li {
+        line-height: 1.8;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .info-section ul li div {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .info-section.awards ul li{
+        flex-direction: row;
+        align-items: end;
+    }
+    
+    .work-image {
+        display: none;
+    }
+    .work-content{
+        width: 100%;
+        margin-right: 0;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1rem;
+        padding: 1vh 0 3vh;
+    }
 }

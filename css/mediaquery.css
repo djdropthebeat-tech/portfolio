@@ -94,62 +94,113 @@
     }
 }
 
-@media (max-width:767px) {
-    #wrap, nav {
-        width: 90vw;
-    }
+@media (min-width:425px) and (max-width: 767px) {
+  #wrap,
+  nav {
+    width: 90vw;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+
+  .info-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "experience"
+      "awards"
+      "certifications";
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  .work-content {
+    width: 100%;
+    margin-right: 0;
+  }
+  .work-image{
+    display: none;
+  }
+  h4 {
+    font-size: 1rem;
+    padding: 1vh 0 3vh;
+  }
+}
+  @media (max-width: 424px) {
     h1{
-        font-size: 6rem;
+        font-size: 4rem;
     }
-    h2{
-        font-size: 3rem;
-    }
-    section {
-        height: auto;
-        padding-top: 80px;
-    }
-    section.works {
-        height: auto;
-        min-height: 100vh;
-        scroll-snap-align: none;
-    }
-    .info-inner {
-        display: block;
-    }
-    .info-section {
-        width: 100%;
-        height: auto;
-        margin-top: 4vh;
-        box-sizing: border-box;
-    }
-    
-    .info-section ul li {
-        line-height: 1.8;
-        display: flex;
+      #wrap,
+  nav {
+    width: 90vw;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .float-txt {
+    font-size: 1rem;
+  }
+  .info-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "experience"
+      "awards"
+      "certifications";
+  }
+  .info-section ul {
+    font-size: 0.75rem;
+  }
+  .info-section ul li {
+    flex-direction: column;
+    gap: 0;
+  }
+  .info-section ul li div {
+    flex-direction: column;
+    gap: 0;
+  }
+.info-section.awards ul li {
         flex-direction: row;
-        gap: 15px;
-    }
-    .info-section ul li div {
-        flex-direction: row;
-        gap: 15px;
-    }
-    .info-section.awards ul li{
-        flex-direction: row;
+        gap: 0;
         align-items: end;
     }
-    
-    .work-image {
-        display: none;
+    .title {
+        font-size: 1.5rem;
     }
-    .work-content{
+    .work-content {
         width: 100%;
         margin-right: 0;
     }
-    .title{
-        font-size: 1.5rem;
+    .work-image{
+        display: none;
     }
-    h4{
+    h4 {
         font-size: 1rem;
         padding: 1vh 0 3vh;
     }
+    .category{
+        word-break: keep-all ;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .float-txt p{
+        font-size: 0.9rem;
+    }
+    .float-txt h4{
+        width: 70%;
+        font-size: 0.7rem;
+    }
+    .fa-envelope {
+        margin-right: 8px;
+        padding-top: 2px;
+        box-sizing: border-box;
 }
+  }

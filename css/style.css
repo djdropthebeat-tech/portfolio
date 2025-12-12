@@ -187,9 +187,11 @@ h5 {
 }
 
 .info-section ul li {
-  line-height: 1.8;
+  line-height: 2.1;
   display: flex;
   gap: 20px;
+  word-break: keep-all ;
+
 }
 .info-section.awards ul li {
   justify-content: space-between;
@@ -199,6 +201,9 @@ h5 {
   flex-direction: row;
   gap: 20px;
 }
+/* .date{
+    letter-spacing: -1px;
+} */
 .work {
   display: flex;
   padding: 2vh 0;

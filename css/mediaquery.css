@@ -71,16 +71,19 @@
     .info-section ul{
         gap: 10px;
     }
-    .info-section ul li div {
-        flex-direction: column;
-        gap: 0;
-    }
     .info-section ul li {
-        line-height: 1.8;
+        line-height: 1.6;
+        padding-bottom: 20px;
         display: flex;
         flex-direction: column;
         gap: 0;
     }
+
+    .info-section ul li div {
+        flex-direction: column;
+        gap: 0;
+    }
+   
     .info-section.awards ul li{
         flex-direction: row;
         align-items: end;
@@ -158,10 +161,14 @@
   .info-section ul {
     font-size: 0.75rem;
   }
+  
   .info-section ul li {
-    flex-direction: column;
-    gap: 0;
-  }
+        line-height: 1.6;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
   .info-section ul li div {
     flex-direction: column;
     gap: 0;

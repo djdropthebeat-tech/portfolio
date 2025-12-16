@@ -117,7 +117,21 @@
       "awards"
       "certifications";
   }
-  
+  .info-section ul li {
+        line-height: 1.6;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+  .info-section ul li div {
+      flex-direction: column;
+      gap: 0;
+  }
+  .info-section.awards ul li{
+      flex-direction: row;
+      align-items: end;
+  }
   .title {
     font-size: 1.5rem;
   }

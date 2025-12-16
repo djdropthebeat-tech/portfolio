@@ -16,7 +16,7 @@ a {
 }
 
 #wrap {
-  width: 92vw;
+  width: 85vw;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
@@ -24,7 +24,7 @@ a {
 }
 
 nav {
-  width: 92vw;
+  width: 85vw;
   height: 50px;
   margin: 0 auto;
   position: fixed;
@@ -136,7 +136,7 @@ h2 {
   position: relative;
   box-sizing: border-box;
   display: grid;
-  gap: 10px;
+  gap: 1.25vw;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "about . ."
@@ -163,7 +163,7 @@ h2 {
     width: 100%;
 } */
 .info-section {
-  width: 30vw;
+  width: 27.5vw;
   height: auto;
   margin-top: 4vh;
   box-sizing: border-box;
@@ -189,12 +189,13 @@ h5 {
 .info-section ul li {
   line-height: 2.1;
   display: flex;
-  gap: 20px;
+  gap: 1vw;
   word-break: keep-all ;
 
 }
 .info-section.awards ul li {
   justify-content: space-between;
+  padding-right: 10px;
 }
 .info-section ul li div {
   display: flex;

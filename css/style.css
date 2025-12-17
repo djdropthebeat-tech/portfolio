@@ -99,6 +99,9 @@ section {
   padding-top: 100px;
   box-sizing: border-box;
 }
+section.about-info{
+  margin-bottom: 20vh;
+}
 section.works {
   height: auto;
   min-height: 100vh;
@@ -107,6 +110,8 @@ section.works {
 section.contact {
   height: auto;
   padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
   font-family: "anisette-std", sans-serif;
@@ -266,11 +271,9 @@ h5 {
   height: 100%;
   object-fit: cover;
 }
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25vh;
+.email-box{
+  display:flex; 
+  flex-direction: row;
 }
 .fa-envelope {
   margin-right: 20px;

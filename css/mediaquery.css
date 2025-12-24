@@ -32,7 +32,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "about experience"
-            "awards certifications";
+            "certifications awards";
     }
     .info-section {
         width: 100%;
@@ -114,8 +114,9 @@
     grid-template-areas:
       "about"
       "experience"
+      "certifications"
       "awards"
-      "certifications";
+      ;
   }
   .info-section ul li {
         line-height: 1.6;
@@ -169,8 +170,9 @@
     grid-template-areas:
       "about"
       "experience"
+      "certifications"
       "awards"
-      "certifications";
+      ;
   }
   .info-section ul {
     font-size: 0.75rem;

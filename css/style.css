@@ -145,7 +145,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "about . ."
-    "experience awards certifications";
+    "experience  certifications awards";
 }
 
 .info-inner .about {

@@ -98,7 +98,7 @@ header{
   justify-content: space-between;
   cursor: pointer;
   overflow-y: hidden;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .mobile-nav span {
